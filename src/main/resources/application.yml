@@ -1,11 +1,11 @@
 server:
-  port: 9091
+  port: 9020
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: Pass123
-    url: jdbc:mysql://localhost:3306/PetexProject
+    url: jdbc:mysql://localhost:3306/PetexProjectDB
     username: root
   jpa:
     hibernate:
@@ -14,4 +14,18 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
+  mvc:
+    dispatch-options-request: true
+
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mdsarfrazahmad852131@gmail.com
+    password: mhvlotpkbaivgxnp
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true 
     
